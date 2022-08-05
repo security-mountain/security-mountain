@@ -39,7 +39,6 @@ module.exports = {
                   sort: { order: DESC, fields: [frontmatter___date] },
                 ) {
                   nodes {
-                    html
                     fields {
                       slug
                     }
