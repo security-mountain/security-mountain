@@ -1,71 +1,48 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
+import * as React from "react";
+import { Link, graphql } from "gatsby";
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../components/layout";
+import AppHead from "../components/app-head";
+
+import logo from "../assets/wordmark.png";
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
-
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <p>
-          No blog posts found. Add markdown posts to "content/individual" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
+  const siteTitle = data.site.siteMetadata?.title || `Title`;
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-
-          return (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
-            </li>
-          )
-        })}
-      </ol>
+    <Layout location={location} title={siteTitle} isFullScreen={true}>
+      <div className="welcomeWrapper">
+        <div className="modalWelcome">
+          <img src={logo} className="logoheader" />
+          <div class="modalFooter">
+            <p className="qtext">
+              Are you an individual or part of a business?
+            </p>
+            <div className="options">
+              <Link to={"/individual/"} itemProp="url" className="btnTile btnPersonal">
+                <i className="fa-solid fa-user" />
+                <p>Individual</p>
+              </Link>
+              <Link to={"/business/"} itemProp="url" className="btnTile btnBusiness">
+                <i className="fa-solid fa-computer" />
+                <p>Business</p>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogIndex
+export default BlogIndex;
 
 /**
  * Head export to define metadata for the page
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="All posts" />
+export const Head = () => <AppHead title="Welcome" />;
 
 export const pageQuery = graphql`
   query {

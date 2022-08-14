@@ -12,6 +12,7 @@
     "gatsby-plugin-feed": "^4.20.0",
     "gatsby-plugin-image": "^2.20.0",
     "gatsby-plugin-manifest": "^4.20.0",
+    "gatsby-plugin-sass": "^5.20.0",
     "gatsby-plugin-sharp": "^4.20.0",
     "gatsby-remark-copy-linked-files": "^5.20.0",
     "gatsby-remark-images": "^6.20.0",
@@ -24,6 +25,8 @@
     "prismjs": "^1.28.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "sass": "^1.54.4",
+    "sass-loader": "^13.0.2",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75"
   },
