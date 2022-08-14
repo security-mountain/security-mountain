@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Welcome Page</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<script src="game.js"></script>
+</head>
+
+<body onLoad="openModalWelcome()" class="welcomebody">
+<div id="modalWelcome" class="modal-bg-welcome">
+  <div class="modalWelcome"> <img src="logohead.png" class="logoheader">
+    <p class="qtext">What type of data are you protecting?</p>
+    <div class="options"> <a href="MountainHome.html">
+      <button class="btnPersonal">
+      <div style="text-align:center"> <i class="fa-solid fa-user"></i> <br>
+        <span class="head-mini-text">Personal</span> </div>
+      </button>
+      </a> <a href="MountainHome.html">
+      <button class="btnBusiness">
+      <div style="text-align:center"> <i class="fa-solid fa-computer"></i> <br>
+        <span class="head-mini-text">Business</span> </div>
+      </button>
+      </a> </div>
+  </div>
+</div>
+</body>
+</html>

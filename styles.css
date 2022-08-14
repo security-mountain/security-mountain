@@ -1,0 +1,830 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #24252a;
+  transition: top 0.3s;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+  max-width: 100%;
+}
+.logo {
+  cursor: pointer;
+  order: 3;
+  margin-left: auto;
+}
+.logo1 {
+  height: 40px;
+  padding: 0;
+}
+nav {
+  order: 1;
+}
+.nav__links a, .cta, .overlay__content a {
+  font-family: "Lato, Helvitica", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+.nav__links {
+  list-style: none;
+  display: flex;
+  font-size: 16px;
+}
+.nav__links li {
+  padding: 0px 20px;
+}
+.nav__links li:nth-child(1) {
+  padding: 0 20px 0 0;
+}
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+  color: #0088a9;
+}
+.cta {
+  order: 2;
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn3a {
+  position: absolute;
+  top: 300px;
+  left: 30%;
+  background-color: #EB5746;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn3a:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn3b {
+  position: absolute;
+  top: 400px;
+  left: 80%;
+  background-color: #EB5746;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn3b:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn3c {
+  position: absolute;
+  top: 500px;
+  left: 60%;
+  background-color: #EB5746;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn3c:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn3d {
+  position: absolute;
+  top: 600px;
+  left: 20%;
+  background-color: #EB5746;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn3d:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn3e {
+  position: absolute;
+  top: 700px;
+  left: 40%;
+  background-color: #EB5746;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn3e:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn3f {
+  position: absolute;
+  top: 800px;
+  left: 70%;
+  background-color: #EB5746;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn3f:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn3g {
+  position: absolute;
+  top: 900px;
+  left: 40%;
+  background-color: #EB5746;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn3g:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn3h {
+  position: absolute;
+  top: 1000px;
+  left: 70%;
+  background-color: #EB5746;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn3h:hover {
+  background-color: black;
+}
+.mtnbody {
+  height: 3000px;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn2a {
+  position: absolute;
+  top: 1040px;
+  left: 20%;
+  background-color: #EBB81D;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn2a:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn2b {
+  position: absolute;
+  top: 1140px;
+  left: 55%;
+  background-color: #EBB81D;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn2b:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn2c {
+  position: absolute;
+  top: 1270px;
+  left: 80%;
+  background-color: #EBB81D;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn2c:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn2d {
+  position: absolute;
+  top: 1400px;
+  left: 27%;
+  background-color: #EBB81D;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn2d:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn2e {
+  position: absolute;
+  top: 1520px;
+  left: 59%;
+  background-color: #EBB81D;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn2e:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn2f {
+  position: absolute;
+  top: 1630px;
+  left: 20%;
+  background-color: #EBB81D;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn2f:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn2g {
+  position: absolute;
+  top: 1750px;
+  left: 77%;
+  background-color: #EBB81D;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn2g:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn2h {
+  position: absolute;
+  top: 1860px;
+  left: 15%;
+  background-color: #EBB81D;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn2h:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn2i {
+  position: absolute;
+  top: 2000px;
+  left: 52%;
+  background-color: #EBB81D;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn2i:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn2j {
+  position: absolute;
+  top: 2050px;
+  left: 89%;
+  background-color: #EBB81D;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn2j:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn2k {
+  position: absolute;
+  top: 2120px;
+  left: 30%;
+  background-color: #EBB81D;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn2k:hover {
+  background-color: black;
+}
+.mtnbody {
+  height: 4200px;
+}
+/* Style the button and place it in the middle of the container/image */
+.open-modal-btn1a {
+  position: absolute;
+  top: 2320px;
+  left: 25%;
+  background-color: #519E48;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.open-modal-btn1a:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn1b {
+  position: absolute;
+  top: 2470px;
+  left: 87%;
+  background-color: #519E48;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn1b:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn1c {
+  position: absolute;
+  top: 2600px;
+  left: 20%;
+  background-color: #519E48;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn1c:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn1d {
+  position: absolute;
+  top: 2730px;
+  left: 43%;
+  background-color: #519E48;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn1d:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn1e {
+  position: absolute;
+  top: 2850px;
+  left: 83%;
+  background-color: #519E48;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn1e:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn1f {
+  position: absolute;
+  top: 3000px;
+  left: 32%;
+  background-color: #519E48;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn1f:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn1g {
+  position: absolute;
+  top: 3150px;
+  left: 17%;
+  background-color: #519E48;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn1g:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn1h {
+  position: absolute;
+  top: 3300px;
+  left: 60%;
+  background-color: #519E48;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn1h:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn1i {
+  position: absolute;
+  top: 3500px;
+  left: 82%;
+  background-color: #519E48;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn1i:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn1j {
+  position: absolute;
+  top: 3650px;
+  left: 37%;
+  background-color: #519E48;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn1j:hover {
+  background-color: black;
+}
+/* Style the button and place it in the middle of the container/image */
+.btn1k {
+  position: absolute;
+  top: 3850px;
+  left: 90%;
+  background-color: #519E48;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn1k:hover {
+  background-color: black;
+}
+.mtnbody {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 4600px;
+}
+.bg {
+  width: 100%;
+  height: 500%;
+  background-image: url("mtnbackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 4600px;
+}
+.footer {
+  height: 250%;
+  background-color: black;
+}
+.site-footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5
+}
+.site-footer hr.small {
+  margin: 20px 0
+}
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px
+}
+.site-footer a {
+  color: #737373;
+}
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links {
+  padding-left: 0;
+  list-style: none
+}
+.footer-links li {
+  display: block
+}
+.footer-links a {
+  color: #737373
+}
+.footer-links a:active, .footer-links a:focus, .footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links.inline li {
+  display: inline-block
+}
+.site-footer .social-icons {
+  text-align: right
+}
+.site-footer a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+}
+.copyright-text {
+  margin: 0
+}
+@media (max-width:991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px
+  }
+}
+.modal-bg {
+  /*makes modal background stay in same spot when scrolling*/
+  position: fixed;
+  /*covers 100% of the screen to allow for different resolution support*/
+  width: 100%;
+  /*covers 100% of the screen to allow for different resolution support*/
+  height: 100vh;
+  /*no gap at top*/
+  top: 0;
+  /*no gap on left for background*/
+  left: 0;
+  /*transparent dark background to draw attention to modal window*/
+  background-color: rgba(0, 0, 0, 0.6);
+  /*defines display type as flex*/
+  display: flex;
+  /*centers modal window for neat appearance*/
+  justify-content: center;
+  /*centers modal window for neat appearance*/
+  align-items: center;
+  /*remains hidden until button is pressed*/
+  visibility: hidden;
+  /*remains hidden until button is pressed*/
+  opacity: 0;
+  /*transition to being visible to look nicer*/
+  transition: visibility 0s, opacity 0.5s;
+}
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+}
+.modal1a, .modal1b, .modal1c, .modal1d, .modal1e, .modal1f, .modal1g, .modal1h, .modal1i, .modal1j, .modal1k, .modal2a, .modal2b, .modal2c, .modal2d, .modal2e, .modal2f, .modal2g, .modal2h, .modal2i, .modal2j, .modal2k, .modal3a, .modal3b, .modal3c, .modal3d, .modal3e, .modal3f, .modal3g, .modal3h, .modal3i, .modal3j .modal {
+  background: #ffffff;
+  border-radius: 0.5em;
+  box-shadow: 0 10px 20px rgba(black, 0.2);
+  left: 50%;
+  max-width: 90%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  text-align: left;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9fafb;
+  font-size: 70%;
+  line-height: 1.4;
+  font-family: "Inter", sans-serif;
+  color: #6b7280;
+  font-weight: 400;
+}
+.mheader {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+  color: #111827;
+  padding: 1.5em 2em;
+  pointer-events: all;
+  position: relative;
+  width: calc(100% - 4.5em);
+}
+.text {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-top: 1px solid #e0e0e0;
+  padding: 2em;
+  pointer-events: all;
+  overflow: auto;
+  font-size: 20px;
+}
+.modal-close {
+  /*sets position of close button for modal*/
+  position: absolute;
+  /*sets position of close button for modal*/
+  top: 10px; /*(Ed, 2018)*/
+  /*sets position of close button for modal*/
+  right: 10px;
+  /*sets pointer when hovering for close button for modal so users know it can be clicked*/
+  cursor: pointer;
+}
+.modal-bg-welcome {
+  /*makes modal background stay in same spot when scrolling*/
+  position: fixed;
+  /*covers 100% of the screen to allow for different resolution support*/
+  width: 100%;
+  /*covers 100% of the screen to allow for different resolution support*/
+  height: 100vh;
+  /*no gap at top*/
+  top: 0;
+  /*no gap on left for background*/
+  left: 0;
+  /*transparent dark background to draw attention to modal window*/
+  background-color: rgba(0, 0, 0, 0.6);
+  /*defines display type as flex*/
+  display: flex;
+  /*centers modal window for neat appearance*/
+  justify-content: center;
+  /*centers modal window for neat appearance*/
+  align-items: center;
+  /*remains hidden until button is pressed*/
+  visibility: hidden;
+  /*remains hidden until button is pressed*/
+  opacity: 0;
+  /*transition to being visible to look nicer*/
+  transition: visibility 0s, opacity 0.5s;
+}
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+}
+.modalWelcome {
+  background: white;
+  border-radius: 0.5em;
+  box-shadow: 0 10px 20px rgba(black, 0.2);
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  align-items: center;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  line-height: 1.4;
+  font-family: "Inter", sans-serif;
+  color: #6b7280;
+  font-weight: 400;
+}
+.logoheader {
+  width: 80%;
+  left: 8%;
+  top: 5%;
+  padding: 10px;
+}
+.qtext {
+  position: absolute;
+  top: 30%;
+  left: 13%;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  color: #111827;
+  padding: 1.5em 2em;
+  pointer-events: all;
+  font-family: "Inter", sans-serif;
+}
+.options {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  justify-content: center;
+  padding: 10px;
+  width: 90%;
+}
+.btnPersonal {
+  top: 70%;
+  position: absolute;
+  background: #85D988;
+  border-radius: 10px;
+  width: 40%;
+  left: 42%;
+  height: 154px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  border: none;
+}
+.btnBusiness {
+  position: absolute;
+  top: 70%;
+  background-color: green;
+  width: 40%;
+  height: 154px;
+  background: #88AFDF;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  border: none;
+}
+.btnPersonal:hover {
+  background-color: #7bbd7d;
+  cursor: grabbing;
+}
+.btnBusiness:hover {
+  background-color: #88a2df;
+  cursor: grabbing;
+}
+.welcomebody {
+  background-image: url("backggg.jpg");
+  width: 100%;
+  height: 100%;
+}
