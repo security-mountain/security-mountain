@@ -32,7 +32,7 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
-  --font-body: var(--fontFamily-serif);
+  --font-body: var(--fontFamily-sans);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
   --fontWeight-medium: 500;
@@ -311,4 +311,113 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+}
+
+/* Project Styles Start */
+
+.body-full-screen-wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+.welcomeWrapper {
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+    .modalWelcome {
+      background: white;
+      border-radius: 0.5em;
+      box-shadow: 0 10px 20px rgba(black, 0.2);
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      min-width: 300px;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      line-height: 1.4;
+      color: #6b7280;
+      font-weight: 400;
+    }
+  
+    .modalFooter {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+    .logoheader {
+      width: 80%;
+      padding: 10px;
+    }
+  
+    .qtext {
+      font-size: 20px;
+      font-weight: 900;
+      line-height: normal;
+      color: #111827;
+      text-align: center;
+    }
+  
+    .options {
+      display: flex;
+      padding: 10px;
+      width: 90%;
+      gap: 20px;
+    }
+  
+    .btnTile {
+      height: 154px;
+      font-size: 18pt;
+      border: none;
+      border-radius: 10px;
+      flex-grow: 1;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      gap: 10px;
+
+      i {
+        font-size: 24pt;
+      }
+
+      p {
+        line-height: 1;
+        margin: 0;
+        padding: 0 20px;
+      }
+    }
+  
+    .btnPersonal {
+      background: #85D988;
+    }
+  
+    .btnBusiness {
+      background: #88AFDF;
+  
+    }
+  
+    .btnPersonal:hover {
+      background-color: #7bbd7d;
+    }
+  
+    .btnBusiness:hover {
+      background-color: #88a2df;
+    }
 }

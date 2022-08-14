@@ -5,11 +5,11 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import * as React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
 
-const Seo = ({ description, lang, title, children }) => {
+const AppHead = ({ description, lang, title, children }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -21,10 +21,10 @@ const Seo = ({ description, lang, title, children }) => {
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
+  const metaDescription = description || site.siteMetadata.description;
+  const defaultTitle = site.siteMetadata?.title;
 
   return (
     <>
@@ -37,18 +37,21 @@ const Seo = ({ description, lang, title, children }) => {
 
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
+
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+      
       {children}
     </>
-  )
-}
+  );
+};
 
-Seo.defaultProps = {
+AppHead.defaultProps = {
   description: ``,
-}
+};
 
-Seo.propTypes = {
+AppHead.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string.isRequired,
-}
+};
 
-export default Seo
+export default AppHead;
