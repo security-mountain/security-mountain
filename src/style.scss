@@ -332,11 +332,6 @@ a:focus {
   background-size: cover;
 }
 
-ol, ul {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
-}
-
 .individualMountain {
   ol {
       li button {
@@ -550,7 +545,9 @@ ol, ul {
     }
 }
 article.blog-post {
-  position: fixed; /* or absolute */
+  position: fixed;
   top: 50%;
   left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
