@@ -545,3 +545,8 @@ ol, ul {
       background-color: #88a2df;
     }
 }
+article.blog-post {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+}
