@@ -17,9 +17,20 @@ const Layout = ({ location, title, children, isFullScreen }) => {
 
   if (isRootPath) {
     header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
+      <header id="navbar">
+          <Link className="logo" to="/">
+            <img src="logo.png" alt="logo" class="logo1">
+          </a>
+          <nav id="nav">
+              <ul class="nav__links">
+                  <li>
+                    <Link to="/" className="cta">
+                      Home<i class="fas fa-home"></i>
+                    </Link>
+                  </li>
+              </ul>
+          </nav>
+      </header>
     );
   } else {
     header = (
