@@ -7,14 +7,14 @@ import AppHead from "../components/app-head";
 import logo from "../assets/wordmark.png";
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`;
+  const siteTitle = data.site.siteMetadata?.title || `Security Mountain`;
 
   return (
     <Layout location={location} title={siteTitle} isFullScreen={true}>
       <div className="welcomeWrapper">
         <div className="modalWelcome">
-          <img src={logo} className="logoheader" />
-          <div class="modalFooter">
+          <img src={logo} className="logoheader" alt="Security Mountain" />
+          <div className="modalFooter">
             <p className="qtext">
               Are you an individual or part of a business?
             </p>

@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 import AppHead from "../components/app-head";
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`;
+  const siteTitle = data.site.siteMetadata?.title || `Security Mountain`;
   const posts = data.allMarkdownRemark.nodes;
 
   if (posts.length === 0) {
@@ -39,16 +39,7 @@ const BlogIndex = ({ data, location }) => {
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
                 </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
               </article>
             </li>
           );
@@ -74,7 +65,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(filter: { fields: {category: {eq: "business"}}}, sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
         fields {
           slug
