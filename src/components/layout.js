@@ -34,7 +34,7 @@ const Layout = ({ location, title, children, isFullScreen }) => {
     );
   } else {
     header = (
-
+      <header></header>
     );
   }
 
