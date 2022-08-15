@@ -17,6 +17,9 @@ const BlogPostTemplate = ({
         itemScope
         itemType="http://schema.org/Article"
       >
+        <Link to="/">
+          <i class="bi bi-arrow-left"></i>
+        </Link>
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
         </header>
