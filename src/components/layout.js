@@ -19,8 +19,8 @@ const Layout = ({ location, title, children, isFullScreen }) => {
     header = (
       <header id="navbar">
           <Link className="logo" to="/">
-            <img src="logo.png" alt="logo" class="logo1">
-          </a>
+            <img src="logo.png" alt="logo" className="logo1" />
+          </Link>
           <nav id="nav">
               <ul class="nav__links">
                   <li>
