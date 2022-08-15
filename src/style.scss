@@ -324,6 +324,13 @@ a:focus {
     width: 100vw;
 }
 
+.mountainWrapper {
+  background-image: url('assets/mountain.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
 .welcomeWrapper {
     background-image: url('assets/background.jpg');
     background-size: cover;
