@@ -59,7 +59,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: { fields: {category: {eq: "individual"}}}, sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(filter: { fields: {category: {eq: "individual"}}}, sort: { fields: [frontmatter___position], order: DESC }) {
       nodes {
         fields {
           slug
@@ -68,6 +68,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          position
         }
       }
     }
