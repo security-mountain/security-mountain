@@ -22,8 +22,8 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <h1>Business</h1>
-      <ol style={{ listStyle: `none`, paddingTop: '10rem', paddingLeft: '10rem', paddingBottom: '10rem', paddingRight: '10rem' }}>
+      <h1 style={{ paddingTop: '10rem', paddingLeft: '10rem', paddingBottom: '5rem', paddingRight: '10rem' }}>Businesses</h1>
+      <ol style={{ listStyle: `none`, paddingTop: '5rem', paddingLeft: '10rem', paddingBottom: '10rem', paddingRight: '10rem' }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug;
 
