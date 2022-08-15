@@ -66,7 +66,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: { fields: {category: {eq: "business"}}}, sort: { fields: [frontmatter___position], order: DESC }) {
+    allMarkdownRemark(filter: { fields: {category: {eq: "business"}}}, sort: { fields: [frontmatter___position], order: ASC }) {
       nodes {
         fields {
           slug
