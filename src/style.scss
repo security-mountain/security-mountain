@@ -328,10 +328,8 @@ a:focus {
 
 .mountainWrapper {
   background-image: url('assets/mountain.jpg');
-  background-repeat: no-repeat;
+  background-repeat: contain;
   background-size: cover;
-  height: 100%;
-  width: 100%;
 }
 
 .individualMountain ol li:nth-of-type(1) {
