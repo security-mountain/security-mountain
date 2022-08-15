@@ -331,6 +331,7 @@ a:focus {
   height: 100%;
   width: 100%;
 }
+
 .welcomeWrapper {
     background-image: url('assets/background.jpg');
     background-size: cover;
@@ -431,4 +432,8 @@ a:focus {
     .btnBusiness:hover {
       background-color: #88a2df;
     }
+}
+
+.individualMountain ol li:nth-of-type(0) {
+     padding-left: 2rem;
 }
