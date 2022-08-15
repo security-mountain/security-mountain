@@ -1,4 +1,4 @@
-import * as React from "react";
+mport * as React from "react";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
@@ -27,14 +27,20 @@ const BlogIndex = ({ data, location }) => {
           const title = post.frontmatter.title || post.fields.slug;
 
           return (
-           <li key={post.fields.slug} style={{ paddingTop: "9rem", paddingLeft: "4rem" }}>
+            <li key={post.fields.slug}>
+              <article
+                className="post-list-item"
+                itemScope
+                itemType="http://schema.org/Article"
+              >
                 <header>
-                  <button>
+                  <h2>
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
-                  </button>
+                  </h2>
                 </header>
+              </article>
             </li>
           );
         })}
