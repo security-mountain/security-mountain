@@ -332,8 +332,16 @@ a:focus {
   background-size: cover;
 }
 
-.individualMountain ol li:nth-of-type(1) {
-     padding-left: 2rem;
+.individualMountain {
+  ol { 
+      li:nth-of-type(1) {
+        padding-left: 2rem;
+      }
+    
+      li:nth-of-type(2) {
+        padding-left: 3rem;
+      }
+  }
 }
 
 .welcomeWrapper {
