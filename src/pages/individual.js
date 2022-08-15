@@ -30,7 +30,7 @@ const BlogIndex = ({ data, location }) => {
 
           return (
             <li key={post.fields.slug} style={{ paddingTop: "9rem" }}>
-                <header className={post.fields.slug}>
+                <header>
                   <button>
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
