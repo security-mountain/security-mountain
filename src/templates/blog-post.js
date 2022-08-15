@@ -2,13 +2,13 @@ import * as React from "react";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
-import Seo from "../components/seo";
+import AppHead from "../components/app-head";
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
   location,
 }) => {
-  const siteTitle = site.siteMetadata?.title || `Title`;
+  const siteTitle = site.siteMetadata?.title || `Security Mountain`;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -60,7 +60,7 @@ const BlogPostTemplate = ({
 
 export const Head = ({ data: { markdownRemark: post } }) => {
   return (
-    <Seo
+    <AppHead
       title={post.frontmatter.title}
       description={post.frontmatter.description}
     />

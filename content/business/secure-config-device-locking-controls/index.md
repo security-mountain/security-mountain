@@ -1,6 +1,6 @@
 ---
 title: Ensure appropriate device locking controls - biometric, password or PIN before gaining access to the services. Biometric tests, passwords and PINs.
-date: "2022-08-13T211:10:03.284Z"
+date: "2022-08-13T21:10:03.284Z"
 description: ""
 position: 1
 section: "Secure configuration"
