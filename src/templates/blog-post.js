@@ -28,7 +28,7 @@ const BlogPostTemplate = ({
           itemProp="articleBody"
         />
         <hr />
-        <p>{post.frontmatter.date}</p>
+        <p>Last changed: {post.frontmatter.date}</p>
         <footer></footer>
       </article>
       <nav className="blog-post-nav">
@@ -73,7 +73,7 @@ export const pageQuery = graphql`
       id
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMMM YYYY")
         description
         position
       }
