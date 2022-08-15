@@ -332,6 +332,11 @@ a:focus {
   background-size: cover;
 }
 
+ol, ul {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
 .individualMountain {
   ol {
       li button {
