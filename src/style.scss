@@ -335,7 +335,6 @@ a:focus {
 .individualMountain {
   ol {
       li button {
-        color: white;
         padding: 1rem 2rem;
         font-size: 16px;
         border: none;
@@ -345,6 +344,7 @@ a:focus {
     
       li button a {
         text-decoration: none;
+        color: white;
       }
     
       li:nth-child(-n+7) button {
