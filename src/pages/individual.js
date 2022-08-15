@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 import AppHead from "../components/app-head";
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`;
+  const siteTitle = data.site.siteMetadata?.title || `Security Mountain`;
   const posts = data.allMarkdownRemark.nodes;
 
   if (posts.length === 0) {
@@ -74,7 +74,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(filter: { fields: {category: {eq: "individual"}}}, sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
         fields {
           slug

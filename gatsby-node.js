@@ -1,5 +1,6 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
+const { dirname, basename } = require('path');
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
@@ -10,7 +11,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
-      {
+      query {
         allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: ASC }
           limit: 1000
@@ -19,6 +20,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             id
             fields {
               slug
+              category
             }
           }
         }
@@ -63,12 +65,22 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode });
+    const relativeFilePath = createFilePath({
+      node,
+      getNode,
+      basePath: 'content/'
+    });
+
+    createNodeField({
+      name: `category`,
+      node,
+      value: basename(dirname(relativeFilePath)),
+    })
 
     createNodeField({
       name: `slug`,
       node,
-      value,
+      value: `${relativeFilePath}`,
     });
   }
 };
