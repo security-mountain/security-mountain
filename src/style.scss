@@ -348,6 +348,10 @@ ol, ul {
         cursor: pointer;
       }
     
+      li button a {
+        text-decoration: none;
+      }
+    
       li:nth-child(-n+7) button {
         background-color: #EB5746;
       }
