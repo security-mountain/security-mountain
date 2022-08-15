@@ -22,6 +22,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+    
     <div className="individualMountain mountainWrapper">
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
@@ -29,7 +30,7 @@ const BlogIndex = ({ data, location }) => {
 
           return (
             <li key={post.fields.slug} style={{ paddingTop: "9rem" }}>
-                <header>
+                <header className={post.fields.slug}>
                   <button>
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
