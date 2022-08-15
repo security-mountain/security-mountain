@@ -28,7 +28,7 @@ const BlogIndex = ({ data, location }) => {
           const title = post.frontmatter.title || post.fields.slug;
 
           return (
-            <li key={post.fields.slug}>
+            <li key={post.fields.slug} style={{ marginLeft: "10rem" }}>
                 <header>
                   <button>
                     <Link to={post.fields.slug} itemProp="url">
