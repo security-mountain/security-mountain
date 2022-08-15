@@ -333,7 +333,25 @@ a:focus {
 }
 
 .individualMountain {
-  ol { 
+  ol {
+      li {
+        color: white;
+        padding: 1rem, 2rem;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    
+      li:nth-child(-n+7) {
+        background-color: #EB5746;
+      }
+      li:nth-child(n+10) {
+        background-color: #EBB81D;
+      }
+      li:nth-child(n+21) {
+        background-color: #519E48;
+      }
       li:nth-of-type(1) {
         padding-left: 52rem;
       }
